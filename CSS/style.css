@@ -42,10 +42,10 @@ img{
 }
 
 .container-links{
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -56,18 +56,57 @@ img{
     border-radius: 20px;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 600;
     padding: 10px;
     width: 768px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-links a p{
+    width: 90%;
+}
+
+.container-links a img{
+    width: 25px;
+    height: 25px;
+}
+
+a:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 h1{
+    position: relative;
     color: #fff;
     font-size: 42px;
+    text-shadow: 2px 6px 3px #000000;
 }
 
-h1::after{
-    content: ("");
-    background-image: url(../);
+h1::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    bottom: 2px;
+    left: 5px;
+    border-radius: 4px;
+  }
+
+.container-img-title h1::after{
+    position: absolute;
+    bottom: 12px;
+    right: -20px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin: 0 -5px 0 0;
+    background-image: url(../img/assets/verificado.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
   
