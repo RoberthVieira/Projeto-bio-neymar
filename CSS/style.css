@@ -110,3 +110,13 @@ h1::before {
     background-repeat: no-repeat;
 }
   
+/*sessão-estatistica*/
+.container-estatistica{
+    background-image: url(../img/assets/imagem-de-fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
